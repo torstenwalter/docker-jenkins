@@ -7,5 +7,7 @@ services:
     ports:
      - "8080:8080"
      - "50000:50000"
+    environment:
+     - CASC_JENKINS_CONFIG=/var/jenkins_casc
     volumes:
-     - ./config:/var/jenkins_config
+     - ./config:/var/jenkins_casc
